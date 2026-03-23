@@ -1,86 +1,74 @@
-Sentiment Analysis using Naive Bayes
+Sentiment Analysis Using Naive Bayes
 
-Project Overview
-
-This project is a basic Sentiment Analysis model built using Machine Learning. It classifies text into:
-
-Positive
-Neutral
-Negative
-
-The model is trained using the Naive Bayes algorithm and uses Bag of Words for feature extraction.
+A simple and beginner-friendly Machine Learning project that performs sentiment analysis on user input text. The model classifies sentences into positive, negative, or neutral sentiments using the Multinomial Naive Bayes algorithm.
 
 
-Objective
 
-To develop a simple ML-based system that can analyze user input text and determine its sentiment.
+Features:
+Classifies text into Positive, Negative, Neutral
+Real-time user input prediction
+Displays confidence score
+Basic text preprocessing (lowercase, punctuation removal)
+Easy to understand and implement
 
-Technologies Used
+
+
+Tech Stack:
 Python
 Scikit-learn
 Natural Language Processing (NLP)
 
-How It Works
-Input text is taken from the user
-Text is cleaned (lowercase, remove punctuation)
-Converted into numerical form using CountVectorizer
-Model predicts sentiment using Multinomial Naive Bayes
 
 
-Project Structure
-sentiment-analysis
+How It Works:
+A small dataset of labeled sentences is used for training
+Text is preprocessed (lowercase + punctuation removal)
+CountVectorizer converts text into numerical features (Bag of Words)
+Naive Bayes model is trained on the dataset
+User input is analyzed and sentiment is predicted with confidence score
+
+
+
+Project Structure:
+sentiment-analysis/
 │── main.py
 │── README.md
+│── requirements.txt
 
 
-Installation & Setup
-1. Install dependencies
-pip install scikit-learn
-2. Run the program
+
+Installation & Setup:
+1. Clone the repository
+git clone https://github.com/your-username/sentiment-analysis.git
+cd sentiment-analysis
+2. Install dependencies
+pip install -r requirements.txt
+3. Run the project
 python main.py
 
 
-Example Usage
+
+Example Usage:
 Enter a sentence: I love this product
 Sentiment: positive
 Confidence: 0.85
 
 
-Dataset
 
-The model uses a small custom dataset with labeled sentences:
-
-Positive examples
-Negative examples
-Neutral examples
+Limitations:
+Uses a small dataset (low accuracy)
+Cannot detect sarcasm or complex language
+Basic NLP implementation
 
 
- Features
-Simple and beginner-friendly
-Real-time sentiment prediction
-Confidence score output
-Handles positive, negative, and neutral sentiments
 
-
-Limitations
-Small dataset → limited accuracy
-Cannot detect sarcasm
-Basic NLP (no deep learning)
-
-
-Future Improvements
+Future Improvements:
 Use larger datasets (IMDb, Twitter)
-Implement advanced models (LSTM, BERT)
-Add GUI (Tkinter / Streamlit)
-Deploy as a web app
+Implement TF-IDF vectorization
+Add deep learning models (LSTM, BERT)
+Build a web app using Streamlit
 
-References
-Scikit-learn Documentation
-NLP tutorials
 
-Author
-Bedantika Banerjee
-25BCE10597
-
+Author:
 Bedantika Banerjee
 25BCE10597
