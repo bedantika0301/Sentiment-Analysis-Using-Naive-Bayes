@@ -1,74 +1,75 @@
-Sentiment Analysis Using Naive Bayes
+Sentiment Analysis Using Bayes
 
-A simple and beginner-friendly Machine Learning project that performs sentiment analysis on user input text. The model classifies sentences into positive, negative, or neutral sentiments using the Multinomial Naive Bayes algorithm.
-
-
+This is a project that uses Machine Learning to figure out how someone feels about something they wrote. The Naive Bayes algorithm looks at what the person said. Decides if they are happy, sad or feel nothing about it.
 
 Features:
-Classifies text into Positive, Negative, Neutral
-Real-time user input prediction
-Displays confidence score
-Basic text preprocessing (lowercase, punctuation removal)
-Easy to understand and implement
 
+* Classifies what people write into Positive Neutral feelings
 
+* Tells you how it feels about what you wrote away
+
+* Shows how sure it is about its decision
+
+* Makes the text easier to understand by making everything lowercase and removing punctuation
+
+* Easy to learn and do
 
 Tech Stack:
+
 Python
+
 Scikit-learn
+
 Natural Language Processing (NLP)
 
-
-
 How It Works:
-A small dataset of labeled sentences is used for training
-Text is preprocessed (lowercase + punctuation removal)
-CountVectorizer converts text into numerical features (Bag of Words)
-Naive Bayes model is trained on the dataset
-User input is analyzed and sentiment is predicted with confidence score
 
-
+We start with a group of sentences that we already know how people feel about. We make all the text the same size and remove punctuation. Then we turn the text into numbers that the computer can understand. The Naive Bayes model learns from these sentences. Then it can tell us how someone feels about what they wrote and how sure it is.
 
 Project Structure:
+
 sentiment-analysis/
+
 │── main.py
+
 │── README.md
+
 │── requirements.txt
 
-
-
 Installation & Setup:
-1. Clone the repository
+
+1. Get a copy of the project
+
 git clone https://github.com/your-username/sentiment-analysis.git
+
 cd sentiment-analysis
-2. Install dependencies
+
+2. Get all the tools you need
+
 pip install -r requirements.txt
-3. Run the project
+
+3. Start the project
+
 python main.py
 
-
-
 Example Usage:
+
 Enter a sentence: I love this product
-Sentiment: positive
+
+Sentiment: Positive
+
 Confidence: 0.85
 
-
-
 Limitations:
-Uses a small dataset (low accuracy)
-Cannot detect sarcasm or complex language
-Basic NLP implementation
 
-
+The project does not use a lot of sentences to learn from so it is not always right. It also cannot tell if someone is being sarcastic or using language. It is a way of understanding what people write.
 
 Future Improvements:
-Use larger datasets (IMDb, Twitter)
-Implement TF-IDF vectorization
-Add deep learning models (LSTM, BERT)
-Build a web app using Streamlit
 
+We can use sentences to make it smarter like the ones from IMDb or Twitter. We can also use ways of turning text into numbers like TF-IDF. Adding advanced models like LSTM or BERT can help too. Maybe we can even make a web page, for it using Streamlit.
 
 Author:
+
 Bedantika Banerjee
+
 25BCE10597
